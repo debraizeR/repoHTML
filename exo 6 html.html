@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Première page</title>
-</head>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Première page</title>
+	</head>
 
-<body>
+	<body>
 
-	<form action="" method="">
+		<form action="" method="">
 
-<fieldset>
-	<legend>Votre identité</legend>
-	<ol>
-		<li><label>Nom : </label><input type="text" placeholder="Nom"></input></li>
-		<li><label>Prénom : </label><input type="text" placeholder="Prénom"></input></li>
-		<li><label>Adresse mail : </label><input type="text" placeholder="Adresse mail"></input></li>
-	</ol>
-</fieldset>
+			<fieldset>
+				<legend>Votre identité</legend>
+				<ol>
+					<li><label>Nom : </label><input type="text" id="Name" name="Nom"  placeholder="Nom" required></input></li>
+					<li><label>Prénom : </label><input type="text" id="FirstName" name="Prénom" placeholder="Prénom" required></input></li>
+					<li><label>Adresse mail : </label><input type="text" id="Mail" name="Mail" placeholder="Adresse mail" required></input></li>
+				</ol>
+			</fieldset>
 
-<fieldset>
-	<legend>Adresse de livraison</legend>
-	<ol>
-		<li><label>Adresse : </label><textarea rows="5"></textarea></li>
-		<li><label>Code Postal : </label><input type="text" placeholder="Code postal"></input></li>
-		<li><label>Ville : </label><input type="text" placeholder="Ville"></input></li>
-	</ol>
-</fieldset>
-
-
-<fieldset>
-	<legend>Informations de réglement</legend>
-	<ol>
-		<li><label>Type de carte bancaire : </label></li>
-			<ul>
-			<li><input type="radio"></input><label>VISA</label></li>
-			<li><input type="radio"></input><label>Mastercard</label></li>
-			</ul>
-		<li><label>Numéro de carte : </label><input type="text" placeholder="Numéro de carte"></input></li>
-		<li><label>Code de sécurité : </label><input type="text" placeholder="Code de sécurité"></input></li>
-		<li><label>Nom du titulaire : </label><input type="text" placeholder="Nom du titulaire"></input></li>
-	</ol>
-</fieldset>
-
-	<input type="submit" value="J'achète!"></input>
-</form>
+			<fieldset>
+				<legend>Adresse de livraison</legend>
+				<ol>
+					<li><label>Adresse : </label><textarea rows="5" cols="10" id="Address" name="Adresse" required></textarea></li>
+					<li><label>Code Postal : </label><input type="text"  id="zipcode" name="CodePostal" placeholder="Code postal" required></input></li>
+					<li><label>Ville : </label><input type="text"  id="City" name="Ville" placeholder="Ville" required></input></li>
+				</ol>
+			</fieldset>
 
 
+			<fieldset>
+				<legend>Informations de réglement</legend>
+				<ol>
+					<li><label>Type de carte bancaire : </label></li>
+						<ul>
+							<li><input type="radio" id="VISA" name="cardType" value="VISA" required checked ></input><label>VISA</label></li>
+							<li><input type="radio" id="Mastercard" name="cardType" value="Mastercard" required ></input><label>Mastercard</label></li>
+						</ul>
+					<li><label>Numéro de carte : </label><input type="text" id="CardNumber" name="NuméroCarte" placeholder="Numéro de carte" required></input></li>
+					<li><label>Code de sécurité : </label><input type="text" id="SecurityCode" name="CodeSécurité" placeholder="Code de sécurité" required></input></li>
+					<li><label>Nom du titulaire : </label><input type="text" id="Name" name="NomTitulaire" placeholder="Nom du titulaire" required></input></li>
+				</ol>
+			</fieldset>
 
-</body>
+			<input type="submit" name="button" value="J'achète!"></input>
+		</form>
+	</body>
 </html>
